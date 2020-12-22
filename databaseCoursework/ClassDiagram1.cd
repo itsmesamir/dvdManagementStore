@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="databaseCoursework.WebForm3">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAYAAAABAAAAAAAIAAAAAAAAAAAQAIAAAA=</HashCode>
+      <FileName>copies.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="databaseCoursework.WebForm6">
+    <Position X="3.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAQAAYAAAAAAAAAAAAIAAAAAAAAAAAAAIACAA=</HashCode>
+      <FileName>copyDetails.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="databaseCoursework.WebForm2">
+    <Position X="3.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>currentLoan.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="databaseCoursework.WebForm10">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQBAAAAAAiAAAAAAAAAAAIAAAAAAAAAAACAIEAAA=</HashCode>
+      <FileName>dashboard.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="databaseCoursework.WebForm7">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAIAAQAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>dvdDetails.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="databaseCoursework.WebForm9">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAgAAAAAAAAACAIAAAA=</HashCode>
+      <FileName>inactiveDvd.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="databaseCoursework.WebForm4">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAIAAAAAAAAEAAAAIAAAA=</HashCode>
+      <FileName>inactiveMembers.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="databaseCoursework.WebForm8">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAkBEAAAAAAAAAAAAIAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>latestLoan.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="databaseCoursework.Site1" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAgAAAAAAIAAAA=</HashCode>
+      <FileName>LayOut.Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="databaseCoursework.WebForm5">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAIAAAAAAAAAAAIAAQA=</HashCode>
+      <FileName>memberLoan.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="databaseCoursework.WebForm12">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAIgAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>oldDvd.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="databaseCoursework.WebForm11">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIgAAAAAAAAYAAAABAAAAAAAIAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>searchDvd.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

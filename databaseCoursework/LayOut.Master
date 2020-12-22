@@ -1,0 +1,269 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LayOut.Master.cs" Inherits="databaseCoursework.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <!-- Custom fonts for this template-->
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        S
+        #toggle-parent {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        .MyPopupStyle {
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <img src="assets/img/logo.png" class="img-fluid">
+            </a>
+
+            <!-- Divider -->
+
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item ">
+                <a class="nav-link" href="dashboard.aspx">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>DASHBOARD</span></a>
+            </li>
+
+            <!-- Start DVD_STOCK_list -->
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item ">
+                <a class="nav-link" href="searchDvd.aspx">
+                    <i class="fa fa-check-circle"></i>
+                    <span>DVD STOCK</span></a>
+            </li>
+            <!-- END DVD_STOCK_list -->
+            <!-- START AVAILABLE COPIES -->
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item ">
+                <a class="nav-link" href="copies.aspx">
+                    <i class="fa fa-check-circle"></i>
+                    <span>AVAILABLE COPIES</span></a>
+            </li>
+            <!-- END AVAILABLE COPIES -->
+
+            <!-- START LATEST lOAN-->
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item ">
+                <a class="nav-link" href="latestLoan.aspx">
+                    <i class="fa fa-user-plus"></i>
+                    <span>LATEST LOAN</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <!-- Divider end -->
+            <!-- START DVD DETAILS -->
+            <li class="nav-item ">
+                <a class="nav-link" href="dvdDetails.aspx">
+                    <i class="fa fa-plane"></i>
+                    <span>DVD DETAILS</span></a>
+            </li>
+            <!-- END DVD DETAILS -->
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <!-- Divider end -->
+            <!-- START COPY DETAILS -->
+            <li class="nav-item ">
+                <a class="nav-link" href="copyDetails.aspx">
+                    <i class="fa fa-street-view"></i>
+                    <span>COPY DETAILS</span></a>
+            </li>
+            <!-- END COPY DETAILS -->
+             <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <!-- Divider end -->
+             <!-- START DVD RETURN -->
+            <li class="nav-item">
+                <a class="nav-link" href="IssueLoan.aspx">
+                    <i class="fa fa-compact-disc"></i>
+                    <span>ISSUE LOAN</span></a>
+            </li>
+            <!-- END LATEST LOAN  -->
+            <hr class="sidebar-divider my-0">
+            <!-- Divider end -->
+             <!-- START DVD RETURN -->
+            <li class="nav-item">
+                <a class="nav-link" href="ReturnDVD.aspx">
+                    <i class="fa fa-compact-disc"></i>
+                    <span>RETURN DVD</span></a>
+            </li>
+            <!-- END DVD RETURN -->
+            
+             <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <!-- Divider end -->
+            <!-- START MEMBER LOAN COPIES -->
+            <li class="nav-item">
+                <a class="nav-link" href="memberLoan.aspx">
+                    <i class="fa fa-bus"></i>
+                    <span>MEMBER LOAN</span></a>
+            </li>
+             
+            <!-- START AVAILABLE COPIES -->
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item ">
+                <a class="nav-link" href="AddDvd.aspx">
+                    <i class="fa fa-check-circle"></i>
+                    <span>ADD DVD</span></a>
+            </li>
+
+             <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <!-- Divider end -->
+            <!-- START OLD DVD LIST-->
+            <li class="nav-item ">
+                <a class="nav-link" href="oldDvd.aspx">
+                    <i class="fa fa-sitemap"></i>
+                    <span>OLD DVD LIST</span></a>
+            </li>
+            <!-- END OLD DVD LIST-->
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item ">
+                <a class="nav-link" href="loans.aspx">
+                    <i class="fa fa-check-circle"></i>
+                    <span>DVD ON LOAN DETAILS</span></a>
+            </li>
+
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item ">
+                <a class="nav-link" href="MemberList.aspx">
+                    <i class="fa fa-check-circle"></i>
+                    <span>RECENT LOAN DETAILS</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <!-- Divider end -->
+            <!-- START DVD WITH NO LOANS ON LAST 31 DAYS-->
+            <li class="nav-item ">
+                <a class="nav-link" href="inactiveDvd.aspx">
+                    <i class="fa fa-sitemap"></i>
+                    <span>INACTIVE DVD'S</span></a>
+            </li>
+            <!-- END DVD WITH NO LOANS ON LAST 31 DAYS-->
+
+            
+            
+
+            <hr class="sidebar-divider my-0">
+            <!-- Nav Item -USER DETAILS-->
+            <li class="nav-item ">
+                <a class="nav-link" href="users.aspx">
+                    <i class="fa fa-user"></i>
+                    <span>USER DETAILS</span></a>
+            </li>
+            <!-- Nav Item - END USER DETAILS-->
+            <!-- Divider -->
+            
+            <hr class="sidebar-divider my-0">
+            <!-- Nav Item - LOGOUT -->
+            <li class="nav-item ">
+                <a class="nav-link" href="logout.aspx">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>LOGOUT</span></a>
+
+ <!-- Divider --></li>
+           
+           
+             
+            
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+        <!-- Sidebar Toggle (fixed) -->
+        <div id="toggle-parent">
+            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column pt-2">
+
+            <!-- Main Content -->
+            <div id="content">
+
+
+                <!-- Begin Page Content -->
+                <asp:ContentPlaceHolder ID="mainbody" runat="server">
+                </asp:ContentPlaceHolder>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span style class="alert-Primary">Copyright &copy; Everest Video Library 2020 | Developed by Nitisha, Suzana, Samir, Ashwin</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="assets/js/sb-admin-2.min.js"></script>
+    <!-- Page level plugins -->
+    <script src="assets/vendor/chart.js/Chart.min.js"></script>
+
+
+</body>
+</html>
